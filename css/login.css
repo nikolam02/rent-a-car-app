@@ -1,0 +1,83 @@
+body
+{
+    font-family: sans-serif;
+    background-color:  #2e2e2dbf;
+}
+
+
+#loginbox
+{
+    background-color:#ffffff;
+    width: 400px;
+    border-radius: 25px;
+}
+#button
+{
+    border-color: #000000;
+    color: #000000;
+    transition: 0.3s;
+}
+#button:hover
+{
+    background-color:rgb(228, 179, 17);
+    border-color: rgb(122, 94, 0);
+    color: #636363;
+}
+#napraviNalog
+{
+    text-align: center;
+    font-size: small;
+}
+#link
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#link:hover
+{
+    text-decoration: underline;
+    color: rgb(228, 179, 17);
+}
+#button
+{
+    width: 100%;
+}
+.greskaPrazno
+{
+    padding-top: 3px;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    background-color: red;
+    display: table;
+    margin: auto;
+    margin-bottom: 13px;
+    color: white;
+    font-size: 15px;
+}
+.uspesnaReg
+{
+    padding-top: 3px;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    background-color: green;
+    display: table;
+    margin: auto;
+    margin-bottom: 13px;
+    color: white;
+    font-size: 15px; 
+}
+#greskaIme, #greskaPrezime, #greskaEmail,#greskaSifra
+{
+    font-weight: bold;
+    color: red;
+    font-size: small;
+}
+#passwordEye:hover
+{
+    cursor: pointer;
+}
+

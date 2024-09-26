@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.navbar button:hover{
+    background-color: #000000;
+}
+
+ .hero-image{
+    background-size: cover;
+    min-height: 5vh;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.78;
+ }
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0px 23px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    justify-content: space-between;
+
+}
+
+
+.navbar-toogler:focus .btn-close:focus
+{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar ul li
+{
+    color: gold;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.navbar ul li a:hover, .navbar ul li a.active
+{
+    color: rgb(0, 0, 0);
+    
+}
+
+.nav-link{
+    color: gold;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: gold;
+}
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: gold;
+        visibility: hidden;
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav-link:hover::before
+    {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .nav-link:hover::before, .navbar ul li a.active::before
+    {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+.navbar img{
+    opacity: 0;
+}
+
+.navbar.button a:hover{
+    background-color: rgb(120, 117, 117);
+    color: gold;
+}
+
+
+.iznajmljivanje{
+    background-size: cover;
+    min-height: 50vh;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.93;
+    background-color: #000000;
+ }
+
+ .naslov{
+    opacity: 0.9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #f8d71be1 ;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-wrap: break-word;
+}
+
+.kratkePogodnosti{
+    padding-top: 155px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    height: 300px;
+}
+
+.jednostavnaRezervacija,
+.dugorocniNajam {
+    padding-left: 15px;
+    word-wrap: break-word;
+}
+
+.text-wrap{
+    line-height: 1.9;
+    color: #f8d71be1;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+.topPonudaNaslov{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px  #2e2e2dbf solid;
+    opacity: 0.7;
+    font-family: sans-serif;
+}
+
+/* .kartica{
+    padding-top: 30px;
+} */
+
+.ponuda{
+    background-color: #dcdcdce8;
+}
+
+.jumbotronTopPonuda
+{
+    overflow: hidden;
+    border: 1px solid #164863;
+    border-radius: 10px;
+    height: 400px;
+    min-width: 223px;
+    max-width: 300px;
+    transition: 150ms;
+    margin: 6px auto;
+}
+.jumbotronTopPonuda:hover
+{
+    transform: scale(1.05);
+}
+.topPonudaBaner
+{
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 200px;
+    width: 100%;
+}
+.markaAutomobila
+{
+    text-align: left;
+    padding-left: 13px;
+    font-size: 22px;
+    padding-top: 10px;
+    color: #000000;
+}
+.opisCena
+{
+    padding-left: 13px;
+    text-align: left;
+    font-size: 18px;
+    color: #303030;
+}
+.cenaTop
+{
+    font-size: 25px;
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 13px;
+    color: #000000;
+}
+.rezervisiTop
+{
+    display: block;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 52px;
+    width: 100%;
+    background-color: #ffd903e1;
+    color: rgb(0, 0, 0);
+    transition: 300ms;
+    
+}
+.rezervisiTop:hover
+{
+    background-color: #636363;
+    color: #ffd903e1;
+    
+}
+
+.kartica{
+    padding-top: 30px;
+}
+
+.ikonice{
+    color:  #303030;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#topPonuda{
+    height: 600px;
+}
+
+
+.rezervacija{
+
+    width: 400px;
+    background-color: yellow;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+
+.footer
+{
+    width: 100%;
+    background-color: #2e2e2dbf;
+    color: #dabb4cbf;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+#footerLevo
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.footerNaslov
+{
+    font-weight: bold;
+    text-align: left;
+    font-size: 75px;
+}
+
+#odjaviSe, #prijaviSe{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: left;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.fLink
+{
+    text-align: left;
+    font-size: 25px;
+    text-decoration: none;
+    color:  #dabb4cbf;
+    transition: 300ms;
+}
+.fLink:hover
+{
+    color:  #000000;
+}
+.naslovKompanija
+{
+    font-weight: bold;
+    text-align: left;
+    padding-top: 50px;
+    font-size: 35px;
+}
+.opisKompanija
+{
+    font-weight: lighter;
+    text-align: left;
+    margin: -1px;
+}
+
+
+
+/* desni deo */
+#footerDesno
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.tekstKontakt
+{
+    color:  #dabb4cbf;
+    text-decoration: none;
+    transition: 300ms;
+}
+.mapa
+{
+    border-radius: 30px;
+    width: 450px;
+}
+#kontaktTelefon
+{
+    padding-right: 250px;
+}
+#kontaktMail
+{
+    padding-right: 142px;
+}
+
+#kontaktLokacija{
+    padding-right: 30px;
+}
+
+.kontakt{
+    font-size: 17px;
+}
+
+.mreze
+{
+    padding-top: 25px;
+    display: inline;
+}
+#ikonice
+{
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 300ms;
+}
+#ikonice:hover
+{
+   transform: scale(1.5);
+}
+
+
+@media (max-width: 767px) {
+    .kratkePogodnosti .row-large {
+        flex-direction: column;
+    }
+
+    .kratkePogodnosti .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .naslov {
+        text-align: center;
+    }
+}
